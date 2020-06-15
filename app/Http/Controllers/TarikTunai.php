@@ -100,7 +100,7 @@ class TarikTunai extends Controller
 				"message" => "Transaksi Gagal! Siswa Tidak Terdaftar!"
 			]);
 		}
-		$this->broadcastMessage($request->nis, $request->jenis_tabungan, $request->nominal);
+		//$this->broadcastMessage($request->nis, $request->jenis_tabungan, $request->nominal);
         return redirect()->route('mutasi.index');
 	}
 	//Menyimpan Data pada Transaksi

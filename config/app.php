@@ -169,6 +169,7 @@ return [
         Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
+		LaravelFCM\FCMServiceProvider::class,
 
 
         /*
@@ -238,6 +239,8 @@ return [
         'Laratrust'   => Laratrust\LaratrustFacade::class,
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
         'PDF' => Barryvdh\DomPDF\Facade::class,
+		'FCM'      => LaravelFCM\Facades\FCM::class,
+		'FCMGroup' => LaravelFCM\Facades\FCMGroup::class
 
     ],
 
