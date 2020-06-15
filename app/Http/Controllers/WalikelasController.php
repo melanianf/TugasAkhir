@@ -115,7 +115,7 @@ class WalikelasController extends Controller
 			'email' => 'required|email|unique:users,email,'.$request->nama_lengkap.',name',
 			//'email' => 'required|email',
 			'nama_pengguna' => 'required|alpha_dash' ,
-			'katasandi' => 'required',
+			//'katasandi' => 'required',
 			
         ], [
 			'nip.required' => 'Anda belum memasukan nomor induk siswa!',
@@ -129,7 +129,7 @@ class WalikelasController extends Controller
 			'email.unique' => 'Email sudah terdaftar pada sistem!',
 			'nama_pengguna.required' => 'Anda belum memasukan nama_pengguna siswa!',
 			'nama_pengguna.alpha_dash' => 'Nama pengguna hanya dapat terdiri dari alfabet, angka, _ , dan - . contoh : Reguler_12',
-			'katasandi.required' => 'Anda belum memasukan nama_pengguna siswa!',
+			//'katasandi.required' => 'Anda belum memasukan nama_pengguna siswa!',
         ]);
 		
         if($request->aktif!=1){
@@ -158,8 +158,7 @@ class WalikelasController extends Controller
 			'is_verified' => $request->aktif,
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
-
-
+		
 
         // Remove File lama
         if ($request->hasFile('avatar')) {

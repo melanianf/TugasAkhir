@@ -35,7 +35,7 @@
         {!! Form::text('nama_pengguna', null, ['class' => 'form-control', 'placeholder' => 'Nama Pengguna']) !!}
         {!! $errors->first('nama_pengguna', '<p class="help-block">:message</p>') !!}
     </div>
-    <div class="form-group has-feedback{{ $errors->has('katasandi') ? ' has-error' : '' }}">
+    <div class="form-group">
         {!! Form::label('katasandi', 'Kata Sandi*') !!}
 
         {!! Form::text('katasandi', null, ['class' => 'form-control', 'placeholder' => 'Kata Sandi']) !!}
